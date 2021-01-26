@@ -1,5 +1,12 @@
 import React from "react";
-import {View, Text, StyleSheet, Button, Image} from "react-native";
+import {
+    View, 
+    Text, 
+    StyleSheet, 
+    Button, 
+    Image,
+    Dimensions,
+} from "react-native";
 
 import MainButton from "../components/MainButton";
 import BodyText from "../components/BodyText";
@@ -34,13 +41,13 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     imageContainer: {
-        width: 300,
-        height: 300,
-        borderRadius: 200,
+        width: Dimensions.get("window").width * 0.5,
+        height: Dimensions.get("window").width * 0.5,
+        borderRadius: Dimensions.get("window").height * 0.25,
         borderWidth: 3,
         borderColor: "black",
         overflow: "hidden",
-        marginVertical: 30,
+        marginVertical: Dimensions.get("window").height * 0.02,
     },
     image: {
         width: "100%",
@@ -48,12 +55,12 @@ const styles = StyleSheet.create({
     },
     resultContainer: {
         width: "80%",
-        marginHorizontal: 30,
-        marginVertical: 15,
+        marginHorizontal: Dimensions.get("window").height * 0.04,
+        marginVertical: Dimensions.get("window").height * 0.02,
     },
     resultText: {
         textAlign: "center",
-        fontSize: 20,
+        fontSize: Dimensions.get("window").height / 720 * 20,
     },
     highlight: {
         color: Colors.primary,

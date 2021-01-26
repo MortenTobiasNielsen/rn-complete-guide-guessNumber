@@ -3,7 +3,7 @@
     "name": "rn-complete-guide-guessNumber",
     "slug": "rn-complete-guide-guessNumber",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
